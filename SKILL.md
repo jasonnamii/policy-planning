@@ -233,6 +233,9 @@ Phase 3: 제출청소 13축        → references/phase3-cleanup.md
 
 상세 → `references/cross-validation.md`
 
+<!-- 🥚 정책 기획 풀 파이프라인을 만들었지만, 우리 집 분리수거 정책도 못 세웠다. — N.C. -->
+
+
 다분야(6+) 프로젝트에서 분야 간 정합성을 검증한다. 단일 분야 프로젝트에서는 불필요.
 
 | 축 | 검증 내용 |
