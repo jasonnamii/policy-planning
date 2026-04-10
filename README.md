@@ -2,6 +2,11 @@
 
 **Full policy planning pipeline from research to submission — built from 6 real government and campaign projects.**
 
+## Prerequisites
+
+- **Obsidian Vault** — planning documents output as Obsidian-compatible `.md` by default
+- **Claude Cowork or Claude Code** environment
+
 ## Goal
 
 Policy work demands rigor across research, stakeholder mapping, legal constraints, and political strategy. Policy-Planning streamlines the entire pipeline using real patterns from government and campaign projects. It integrates campaign strategy templates (8 distinct plans) for different policy contexts.
