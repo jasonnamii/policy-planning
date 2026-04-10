@@ -1,5 +1,7 @@
 # policy-planning
 
+> 🇰🇷 [한국어 README](./README.ko.md)
+
 **Full policy planning pipeline from research to submission — built from 6 real government and campaign projects.**
 
 ## Prerequisites
