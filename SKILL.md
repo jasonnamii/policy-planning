@@ -1,6 +1,6 @@
 ---
 name: policy-planning
-description: "정책기획 풀 파이프라인 (Phase 0~3). 리서치프레임→축별리서치→스파인→기획안→제출청소까지 일관 수행. P1: 정책기획, 리서치, 스파인도출, 기획안, 제출청소. P2: 기획안써줘, 캠프전략. P3: policy planning. P5: 옵시디언, 마크다운. NOT: 사업계획서, 재무모델, PT."
+description: "v1.0 정책기획 풀 파이프라인 (Phase 0~3). 리서치프레임→축별리서치→스파인→기획안→제출청소까지 일관 수행. P1: 정책기획, 리서치, 스파인도출, 기획안, 제출청소. P2: 기획안써줘, 캠프전략. P3: policy planning. P5: 옵시디언, 마크다운. NOT: 사업계획서, 재무모델, PT."
 "@uses":
   - references/phase0-setup.md
   - references/phase1-research.md
@@ -33,6 +33,15 @@ vault_dependency: SOFT
 | 1 | 발동 조건 외 임의 실행 금지 |
 | 2 | 출력 형식 준수 — 내부 라벨 사용자 노출 금지 |
 | 3 | UP 존댓말·호칭 규칙 우선 적용 |
+
+### 에러 처리
+실패 시 즉시 STOP + 사용자 보고. 재시도 최대 2회.
+
+### 피드백
+개선 제안은 thumbs down 버튼으로 Anthropic에 전달.
+
+### 입력 검증
+발동 전 필수 입력 확인. 불충분 시 1줄 질문으로 보완.
 
 ### 자체 점검 (self-check)
 SKILL.md ≤10KB · P1 ≥5개 · Gotchas 존재 확인 후 수정 완료.
