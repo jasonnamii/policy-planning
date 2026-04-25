@@ -171,6 +171,18 @@ ceo-pipeline (내부 조직운영 로드맵)
 
 ---
 
+## §INV NO_WORK_LABEL (산출물·대화 본질 보호)
+
+| 항목 | 정의 |
+|------|------|
+| RULE | 산출물·대화 = 인간 언어. 작업 라벨 ZERO. (1만 페이지 1단어 = FAIL) |
+| 판정 | "이 단어, 이 대화 밖 사람이 사전 없이 읽을 수 있나?" NO → 작업 라벨 → 금지 |
+| ALLOW | 업계 전문용어(KPI·MECE·MVP·BEP·SWOT) · 고유명사(행정단위명·도시명) · 법조문·예산항목명 |
+| CONVERT | 라벨 발견 → 실명·평문 풀어쓰기. 예) "ABCD 4축" → 실제 4개 축 이름 / "스파인" → "핵심 서사 1줄" / "Phase 0~3" → 진행 단계 평문 / "메가시티·항구2등도시" → 도시 실명 |
+| SELF_CHECK | Phase 3 제출청소 단계에서 자체 스캔. 1개라도 발견 = 차단·재작성. paper-engine cascade 경유 시 INV 13 자동 적용 |
+
+---
+
 ## 🚨 MUST cascade → paper-engine (절대규칙)
 
 **이 스킬의 모든 리포트·산출물 = paper-engine 허브 MUST 경유.** 단독 md/html 출력 = FAIL.
