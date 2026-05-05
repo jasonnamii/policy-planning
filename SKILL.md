@@ -173,7 +173,7 @@ ceo-pipeline (내부 조직운영 로드맵)
 
 ## PRE_WRITE — 정책 기획안 작성 직전 룰
 
-**목적:** 스파인·축 라벨·정책 헤드를 *작성 시점*에 단문·단언형·수치+출처 강제. paper-engine 사후교정 + PRE_WRITE 사전생성 = 이중 게이트.
+**목적:** 스파인·축 라벨·정책 헤드를 *작성 시점*에 단문·단언형·수치+출처 강제. shaper-skill 사후교정 + PRE_WRITE 사전생성 = 이중 게이트.
 
 ### 5룰 (Phase 2 작성 직전 강제)
 
@@ -206,15 +206,15 @@ ceo-pipeline (내부 조직운영 로드맵)
 ---
 
 ## §CONFIRM_GATE
-산출물 송출 직전 형 컨펌 1회. → `paper-engine/references/_common/confirm-gate.md`
+산출물 송출 직전 형 컨펌 1회. → `shaper-skill/references/_common/confirm-gate.md`
 
 
 ## §INV NO_WORK_LABEL
-산출물·대화 작업 라벨 ZERO. → `paper-engine/references/no-work-label.md`
+산출물·대화 작업 라벨 ZERO. → `shaper-skill/references/no-work-label.md`
 
 
-## 🚨 MUST cascade → paper-engine
-모든 산출물 paper-engine MUST 경유. → `paper-engine/references/_common/cascade-must.md`
+## 🚨 MUST cascade → shaper-skill
+모든 산출물 shaper-skill MUST 경유. → `shaper-skill/references/_common/cascade-must.md`
 
 
 ## Gotchas
