@@ -27,11 +27,33 @@ vault_dependency: SOFT
 
 정부·지자체·선거 후보 측의 정책기획을 리서치부터 기획안 완성까지 체계적으로 수행하는 허브 스킬.
 
+
+## Skill Boundaries
+
+- **하는 것** — v1.0 정책기획 풀 파이프라인 (Phase 0~3).
+- **안 하는 것** — 사업계획서(→bp-guide), 재무모델(→financial-model), 프레젠테이션(→pptx), 일반기획(→planning-skill), 사업전략(→biz-skill).
+
 **허브+스포크:** 이 파일은 라우터이자 절차 강제기. 각 Phase의 상세 절차·템플릿·도시유형별 가이드는 `references/`에 분리되어 있다.
 
 ---
 
 ---
+
+## When to Use
+
+- 사용자가 "기획안써줘", "캠프전략짜줘", "정책 만들어줘", "정책안 작성해줘", "policy plan" 같은 표현으로 발동
+- 정책 기획·제안·보고서 작성시, 선거 캠프 전략 수립시, 공공 캠페인 기획시.
+- **안 쓸 때** — 사업계획서(→bp-guide), 재무모델(→financial-model), 프레젠테이션(→pptx), 일반기획(→planning-skill), 사업전략(→biz-skill).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+| 3 | scripts/ 실행 권한 | 권한 보정 후 재시도 |
+
 
 ## ⛔ 절대 규칙
 
@@ -224,7 +246,42 @@ ceo-pipeline (내부 조직운영 로드맵)
 모든 산출물 shaper-skill MUST 경유. → `shaper-skill/references/_common/cascade-must.md`
 
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/policy-planning_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | 옵시디언으로, 마크다운으로, .md로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/policy-planning/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/campaign-strategy.md` | campaign strategy | 해당 단계 진입 시 |
+| `references/city-types-diagnosis.md` | city types diagnosis | 해당 단계 진입 시 |
+| `references/cross-validation.md` | cross validation | 해당 단계 진입 시 |
+| `references/framework-axiom.md` | framework axiom | 해당 단계 진입 시 |
+| `references/gotchas.md` | gotchas | 해당 단계 진입 시 |
+| `references/phase0-setup.md` | phase0 setup | 해당 단계 진입 시 |
+| `references/phase1-research.md` | phase1 research | 해당 단계 진입 시 |
+| `references/phase2-plan.md` | phase2 plan | 해당 단계 진입 시 |
+| `references/phase3-cleanup.md` | phase3 cleanup | 해당 단계 진입 시 |
+| `references/scope-scaling.md` | scope scaling | 해당 단계 진입 시 |
+| `references/why-this-skill.md` | why this skill | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `bp-guide`
+- 후속 작업 → `financial-model`
+- 후속 작업 → `pptx`
+- 후속 작업 → `planning-skill`
+- 후속 작업 → `biz-skill`
+
+## Failure Modes (Gotchas)
 
 | 함정 | 대응 |
 |---|---|
@@ -232,3 +289,11 @@ ceo-pipeline (내부 조직운영 로드맵)
 | 리서치 과잉 수렴 | Phase 1에서 수렴 기준 명확히. 무한루프 방지 |
 | 제출청소 생략 | Phase 3 필수. 내부 용어 노출 시 품질 저하 |
 | 볼트 외 저장 | 산출물은 반드시 VAULT 하위 경로에만 |
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
