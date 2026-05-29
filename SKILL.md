@@ -1,26 +1,7 @@
 ---
 name: policy-planning
 description: |
-  v1.0 정책기획 풀 파이프라인 (Phase 0~3). 리서치프레임→축별리서치→스파인→기획안→제출청소까지 일관 수행.
-    P1: 정책기획, policy planning, 정책기획스킬, 정책안, 공공기획, 캠프전략, 캠페인전략, 선거전략, 정책제안, 리서치프레임, 스파인도출, 정책리서치, 정책설계, 정책문서, 정책보고서, 정책입안, 공약기획, 정책분석.
-    P2: 기획안써줘, 캠프전략짜줘, 정책 만들어줘, 정책안 작성해줘, policy plan, write policy, 정책 기획해줘, 공약 써줘.
-    P3: policy planning pipeline, policy research, policy proposal, campaign strategy, spine derivation.
-    P4: 정책 기획·제안·보고서 작성시, 선거 캠프 전략 수립시, 공공 캠페인 기획시.
-    P5: 옵시디언으로, 마크다운으로.md로.
-    NOT: 사업계획서(→bp-guide), 재무모델(→financial-model), 프레젠테이션(→pptx), 일반기획(→planning-skill), 사업전략(→biz-skill).
-"@uses":
-  - references/phase0-setup.md
-  - references/phase1-research.md
-  - references/phase2-plan.md
-  - references/phase3-cleanup.md
-  - references/campaign-strategy.md
-  - references/cross-validation.md
-  - references/why-this-skill.md
-  - references/framework-axiom.md
-  - references/city-types-diagnosis.md
-  - references/scope-scaling.md
-  - references/gotchas.md
-vault_dependency: SOFT
+  v1.0 정책기획 풀 파이프라인 (Phase 0~3). 리서치프레임→축별리서치→스파인→기획안→제출청소까지 일관 수행. 트리거: 정책기획, policy planning, 정책기획스킬, 정책안, 공공기획, 캠프전략, 캠페인전략, 선거전략, 정책제안, 리서치프레임, 스파인도출, 정책리서치, 정책설계, 정책문서, 정책보고서, 정책입안, 공약기획, 정책분석, 기획안써줘, 캠프전략짜줘, 정책 만들어줘, 정책안 작성해줘. NOT: 사업계획서(→bp-guide), 재무모델(→financial-model), 프레젠테이션(→pptx), 일반기획(→planning-skill), 사업전략(→biz-skill).
 ---
 
 # 정책기획 풀 파이프라인 — 허브 라우터
